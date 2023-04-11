@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Righteous", cursive;
+}
+
+.login-background {
+  width: 100%;
+  height: 100vh;
+  min-height: 642px;
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.firstin {
+  margin-top: 75px;
+}
+
+.input {
+  background: rgb(231, 231, 231);
+  color: #5d67c4;
+  width: 50%;
+  height: 4vh;
+  margin-bottom: 3vh;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 120%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.btn {
+  background: #5d67c4;
+  color: #140f10;
+  width: 30%;
+  height: 3vh;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 80%;
+  font-size: large;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
+    rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background: #5d67c4;
+  color: #140f10;
+  width: 30%;
+  height: 3vh;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 75%;
+  font-size: large;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+  transition: 0.5s;
+  transform: translateY(+0.2vh);
+}
+
+.quest {
+  color: #3c4fbd;
+  font-size: 2.5vh;
+  margin-bottom: 0.5vh;
+  text-align: center;
+}
+
+.glass {
+  width: 35%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  margin-left: 50%;
+  margin-top: 24vh;
+}
+
+.img-login {
+  width: 400px;
+  margin-top: 42.5vh;
+  margin-right: 50%;
+  position: absolute;
+  filter: drop-shadow(8px 8px 4px rgba(50, 50, 93, 0.25));
+}
+
+.sweet-title {
+  position: absolute;
+  margin-top: 20vh;
+  margin-right: 45%;
+  transform: skew(0, -8deg);
+  order: 2;
+  color: rgb(231, 231, 231);
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: clamp(3rem, 10vw, 6rem);
+  line-height: 0.75em;
+  text-align: center;
+  text-shadow: 3px 1px 1px #7985db, 2px 2px 1px #3c4fbd, 4px 2px 1px #7985db,
+    3px 3px 1px #3c4fbd, 5px 3px 1px #7985db, 4px 4px 1px #3c4fbd,
+    6px 4px 1px #7985db, 5px 5px 1px #3c4fbd, 7px 5px 1px #7985db,
+    6px 6px 1px #3c4fbd, 8px 6px 1px #7985db, 7px 7px 1px #3c4fbd,
+    9px 7px 1px #7985db;
+}
+
+.sweet-title span {
+  display: block;
+  position: relative;
+  margin-bottom: 0.5vh;
+}
+
+.sweet-title span:before {
+  content: attr(data-text);
+  position: absolute;
+  text-shadow: 2px 2px 1px #e94aa1, -1px -1px 1px #c736f9, -2px 2px 1px #e94aa1,
+    1px -1px 1px #f736f9;
+  z-index: 1;
+}
+
+.sweet-title span:before:nth-child(1) {
+  padding-right: 2.25rem;
+}
+
+.sweet-title span:before:nth-child(2) {
+  padding-left: 2.25rem;
+}
+
+@media screen and (max-width: 800px) {
+  .img-login {
+    display: none;
+  }
+  .glass {
+    width: 50%;
+    height: 50vh;
+    margin-left: 0;
+    margin-top: 30vh;
+  }
+  .login-background {
+    min-height: 0;
+  }
+  .sweet-title span {
+    display: block;
+    position: relative;
+    margin-bottom: 7vh;
+    margin-top: -6vh;
+    margin-left: 45vw;
+  }
+  .btn {
+    min-height: 29px;
+    min-width: 70px;
+  }
+}
