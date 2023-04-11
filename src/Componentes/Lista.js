@@ -77,7 +77,7 @@ class Login extends React.Component {
             Entrar
           </button>
         </div>
-        <img className="img-login" src="/carteira-png.png" alt="walles-icon" />
+        <img className="img-login" src="https://raw.githubusercontent.com/thspanhol/dinheiro-em-dia/main/public/carteira-png.png" alt="walles-icon" />
         {this.state.redirect && <Navigate to="/carteira" />}
       </div>
     );

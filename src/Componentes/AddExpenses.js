@@ -39,7 +39,7 @@ class AddExpenses extends React.Component {
 
     return (
       <div className="add-background">
-        <img className="img-wallet" src="/carteira-png.png" alt="walles-icon" />
+        <img className="img-wallet" src="https://raw.githubusercontent.com/thspanhol/dinheiro-em-dia/main/public/carteira-png.png" alt="walles-icon" />
         <h1 className="sweet-titleadd">
           <span data-text="Dinheiro">Dinheiro</span>
           <span data-text="em Dia">em Dia</span>

@@ -4,14 +4,14 @@ import Wallet from "./Wallet";
 import NotFound from "./Componentes/NotFound";
 import { Route, Routes } from "react-router-dom";
 
+import { Outlet } from "react-router-dom";
+
 class App extends React.Component {
   render() {
     return (
-      <Routes>
-        <Route exact path="/" element={<Login />} />
-        <Route path="/carteira" element={<Wallet />} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div>
+        <Outlet />
+      </div>
     );
   }
 }

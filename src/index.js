@@ -5,15 +5,32 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import { BrowserRouter } from "react-router-dom";
+/* import { BrowserRouter } from "react-router-dom"; */
+import {
+  RouterProvider,
+  Navigate,
+  createHashRouter,
+} from "react-router-dom";
+import Login from "./Componentes/Lista";
+import Wallet from "./Wallet";
+
+const routerHash = createHashRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      { path: "/", element: <Login /> },
+      { path: "/carteira", element: <Wallet /> },
+      { path: "*", element: <Navigate to="/" /> },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <BrowserRouter>
     <Provider store={store}>
-      <App />
+      <RouterProvider router={routerHash} />
     </Provider>
-  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
