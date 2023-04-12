@@ -39,7 +39,11 @@ class AddExpenses extends React.Component {
 
     return (
       <div className="add-background">
-        <img className="img-wallet" src="https://raw.githubusercontent.com/thspanhol/dinheiro-em-dia/main/public/carteira-png.png" alt="walles-icon" />
+        <img
+          className="img-wallet"
+          src="https://raw.githubusercontent.com/thspanhol/dinheiro-em-dia/main/public/carteira-png.png"
+          alt="walles-icon"
+        />
         <h1 className="sweet-titleadd">
           <span data-text="Dinheiro">Dinheiro</span>
           <span data-text="em Dia">em Dia</span>
@@ -52,6 +56,7 @@ class AddExpenses extends React.Component {
           spellCheck="false"
           onChange={(e) => expense(e.target.value)}
           value={vexpense}
+          placeholder="Ex: Aluguel"
         />
         <p className="questadd">Valor:</p>
         <input
@@ -60,6 +65,7 @@ class AddExpenses extends React.Component {
           type="number"
           onChange={(e) => value(parseFloat(e.target.value))}
           value={vvalue}
+          placeholder="Ex: 700,00"
         />
         <button
           className="btnadd"

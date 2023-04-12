@@ -46,7 +46,7 @@ class ExpensesList extends React.Component {
         <div className="results">
           <p>Total de Despesas: {total.toFixed(2)}</p>
           <p>Meu Rendimento Mensal: {income.toFixed(2)}</p>
-          <p>Valor Restante: {(income - total).toFixed(2)}</p>
+          <p className={(income - total).toFixed(2) < 0 ? 'red' : 'green'}>Valor Restante: {(income - total).toFixed(2)}</p>
           <button className="print" onClick={() => window.print()}>
             Gerar PDF
           </button>

@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: "Righteous", cursive;
+  cursor: default;
 }
 
 .login-background {
@@ -17,7 +18,7 @@
 }
 
 .firstin {
-  margin-top: 75px;
+  margin-top: 90px;
 }
 
 .input {
@@ -31,6 +32,7 @@
   border-radius: 15px;
   text-align: center;
   font-size: 120%;
+  cursor: auto;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
     rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
@@ -53,6 +55,7 @@ input[type="number"]::-webkit-inner-spin-button {
   box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset,
     rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
   transition: 0.5s;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -69,6 +72,15 @@ input[type="number"]::-webkit-inner-spin-button {
   box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
   transition: 0.5s;
   transform: translateY(+0.2vh);
+}
+
+.primeira-vez {
+  margin-top: 10px;
+  color: #5d67c4;
+  cursor: pointer;
+}
+.primeira-vez:hover {
+  color: #3c4fbd;
 }
 
 .quest {
@@ -148,7 +160,7 @@ input[type="number"]::-webkit-inner-spin-button {
     display: none;
   }
   .glass {
-    width: 50%;
+    width: 70%;
     height: 50vh;
     margin-left: 0;
     margin-top: 30vh;
@@ -166,5 +178,11 @@ input[type="number"]::-webkit-inner-spin-button {
   .btn {
     min-height: 29px;
     min-width: 70px;
+  }
+  .primeira-vez {
+    font-size:small;
+  }
+  .firstin {
+    margin-top: 25%;
   }
 }

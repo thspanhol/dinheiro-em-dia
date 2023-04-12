@@ -76,8 +76,22 @@ class Login extends React.Component {
           >
             Entrar
           </button>
+          <p
+            className="primeira-vez"
+            onClick={() =>
+              alert(
+                "Insira seu nome e sua renda mensal, após isso clique em Entrar para calcular suas despesas. 💸💸"
+              )
+            }
+          >
+            Primeira vez aqui?
+          </p>
         </div>
-        <img className="img-login" src="https://raw.githubusercontent.com/thspanhol/dinheiro-em-dia/main/public/carteira-png.png" alt="walles-icon" />
+        <img
+          className="img-login"
+          src="https://raw.githubusercontent.com/thspanhol/dinheiro-em-dia/main/public/carteira-png.png"
+          alt="walles-icon"
+        />
         {this.state.redirect && <Navigate to="/carteira" />}
       </div>
     );
