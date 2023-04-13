@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dinheiro-em-dia/static/css/main.37e88d74.css",
-    "main.js": "/dinheiro-em-dia/static/js/main.3fb6c0bd.js",
+    "main.js": "/dinheiro-em-dia/static/js/main.09f87e02.js",
     "static/js/787.5c187dd2.chunk.js": "/dinheiro-em-dia/static/js/787.5c187dd2.chunk.js",
     "index.html": "/dinheiro-em-dia/index.html",
     "main.37e88d74.css.map": "/dinheiro-em-dia/static/css/main.37e88d74.css.map",
-    "main.3fb6c0bd.js.map": "/dinheiro-em-dia/static/js/main.3fb6c0bd.js.map",
+    "main.09f87e02.js.map": "/dinheiro-em-dia/static/js/main.09f87e02.js.map",
     "787.5c187dd2.chunk.js.map": "/dinheiro-em-dia/static/js/787.5c187dd2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.37e88d74.css",
-    "static/js/main.3fb6c0bd.js"
+    "static/js/main.09f87e02.js"
   ]
 }
