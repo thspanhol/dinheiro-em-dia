@@ -19,7 +19,7 @@ class ExpensesList extends React.Component {
                 Despesa: {`${e[0][0].toLocaleUpperCase() + e[0].substring(1)}`}
               </p>
               <div className="btns-div">
-                <p>Valor: {e[1]} </p>
+                <p>Valor: {e[1].toFixed(2)} </p>
                 <div className="sub-div">
                   <button
                     className="btn-list"
