@@ -1,4 +1,4 @@
-# ⚜️ Projeto YGO ⚜️
+# ⚜️ Projeto Dinheiro em Dia ⚜️
 
 O projeto foi desenvolvido com o intuito de praticar o uso do Redux construindo uma ferramenta de controle de despesas!
 
